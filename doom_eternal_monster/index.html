@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/Style.css">
+    <title>Doom Enemy</title>
+
+</head>
+
+<body class="background">
+    <header class="cabecalho">
+        <h1 class="titulo">Doom Monster</h1>
+    </header>
+
+    <main class="doom-slider">
+        <button class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg>
+        </button>
+
+
+        <ul class="lista-enemy">
+            <!-- #arachnotron -->
+            <li class="back">
+                <div class="sub_title">
+                    <h2> Arachnotron </h2>
+                </div>
+
+                <div>
+                    <img class="front" src="src/imagens/arachnotron.png" alt="arachnotron">
+                </div>
+
+                <div>
+                    <h3>
+                        <p class='descrition'>
+                            Arachnotrons are built with genetic material recovered from the
+                            remains of the original Spider Mastermind, bio-engineered
+                            for cyber-augmentation. While its actual body exhibits only limited
+                            mobility, the oddly cerebral qualities of the Arachnotron make it a
+                            prime candidate for the impulse-controlled prosthetic frame that it
+                            now permanently inhabits. The UAC facility responsible for the
+                            Arachnotron's creation, intended to engineer and weaponize demons
+                            of its own design, was overrun after an outbreak occurred at its
+                            assembly plant, killing everyone inside. The facility, still
+                            operating under the directive of the administrative AI, continues
+                            to manufacture Arachnotrons autonomously.
+                        </p>
+                    </h3>
+                </div>
+            </li>
+
+            <!--#Arch-Viles-->
+            <!-- <li class="back">
+                <div class="sub_title">
+                    <h2> Arachnotron </h2>
+                </div>
+
+                <div>
+                    <img class="front" src="src/imagens/arch-viles.png" alt="arachnotron">
+                </div>
+
+                <div>
+                    <h3>
+                        <p class='descrition'>
+                            Forged from Hellfire, the Archvile is feared
+                            amonglesser demons for its innate ability to
+                            channel andmanipulate the unholy powers of Hell magic.
+                            Descended from the eldest race of demons,
+                            the Arch-vilehas long held a place within the
+                            ruling caste of high-borndemon lords. Possessing
+                            superior intellect among the demon ranks,the
+                            Archvile's psychomancy powers make it a natural-born
+                            rulerof the savage and primitive beasts of Hell,
+                            capable of bendingweak-minded underlings to serve its will.
+                        </p>
+                    </h3>
+                </div>
+            </li> -->
+
+            <!--#Baron of Hell-->
+            <!-- <li>
+                <div>
+                    <h2>Baron of Hell</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/baron of hell.png" alt="baron_of_hell">
+                </div>
+    
+                <div>
+                    <h3>
+                        <p> 
+                            The Fireborne Barons have evolved from the descendant 
+                            clan of the Baron hell breed, and are indigenous to the 
+                            caustic, scorched hellscapes bordering the Burning Abyss. 
+                            A landscape of cragged spires forged from unbreakable Blackstone,
+                            tempered by the crashing waves of the magmatic tide, 
+                            these sulfuric planes of Hell have long served as banishing 
+                            grounds - a place of the exodus to which the damned are 
+                            sentenced as their final destination. The Fireborne Barons 
+                            have evolved in this environment, sustaining themselves 
+                            on the remnants of the damned, growing obsidian carapaces 
+                            and in time becoming infused with the very incendiary matter 
+                            of Hell itself.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Cacodemon-->
+            <!-- <li>
+                <div>
+                    <h2>Cacodemon</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/cacodemon.png" alt="cacodemon">
+                </div>
+    
+                <div>
+                    <h3>
+                        <p> 
+                            Hunters of the Sloughlands, the Cacodemon lurks the
+                            bottomless and murky depths of Hell in search of easy prey. 
+                            An aimless wanderer, the Cacodemon is mostly devoid of 
+                            cognitive ability, sensory awareness, and otherwise commonly 
+                            occurring impulses. Driven only by a singular desire to feed, 
+                            the Cacodemon is likely to appear wherever there is flesh 
+                            to be consumed, bringing with it an insatiable propensity for 
+                            hunger. It is said that the Cacodemon bears some resemblance 
+                            to the cycloptic titans of ancient Hell lore, leading Sentinel 
+                            scholars to believe that the forgotten titans may yet live 
+                            on in some disembodied form.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Carcass-->
+            <!-- <li>
+                <div>
+                    <h2>Carcass</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/carcass.png" alt="carcass">
+                </div>
+    
+                <div>
+                    <h3>
+                        <p> 
+                            The product of inhumane bio-mechanical engineering, 
+                            the Carcass was created in the remote labs of the 
+                            Cultist enclave. Neither truly living nor dead, it 
+                            exists in a state of partial re-animation - its 
+                            cybernetic armature simulating a living impulse within 
+                            a decaying organic host. Devised as a means of extending 
+                            a soldier's usefulness in combat after death, the unliving 
+                            host can only be destroyed by severing the body from its 
+                            cybernetic implants.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Doom_Hunter-->
+            <!-- <li>
+                <div>
+                    <h2>Doom Hunter</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/doom_hunter.png" alt="doom_hunter">
+                </div>
+    
+                <div>
+                    <h3>
+                        <p> 
+                            The Doom Hunter's cybernetic augmentations are extensive, 
+                            with the only visible remnants of the original demon 
+                            being its head, right arm, and half of its upper torso. 
+                            The rest of its body is mechanical, including a large cannon, 
+                            a twin-bladed chainsaw arm, and a set of thrusters that 
+                            allow it to move through the air. It can also interface 
+                            with a  "sled," a hovertank-like apparatus 
+                            equipped with dual heavy machine guns, rocket launchers, 
+                            and a shield generator that protects the 
+                            Doom Hunter's main body from harm.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Dread Knight-->
+            <!-- <li>
+                <div>
+                    <h2>Dread Knight</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/dread knight.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            A variation of the Hell Knight breed, the Dread Knight 
+                            has been modified and hardwired for aggression. 
+                            Armed with exo-prosthesis powering energy-blade augments, 
+                            the Dread Knight is the lethal result of UAC Cultist 
+                            engineering. Epinephrine regulators modulate the Dread Knight 
+                            with an unbroken flow of rage-addled adrenaline, 
+                            while its endorphin receptors have been synchronized 
+                            to respond with the use of its arm-mounted blades. 
+                            With each kill, the Dread Knight is injected 
+                            with a flood of artificial dopamine. 
+                            As a result of its augmentation, the Dread Knight
+                            is driven by a biochemically engineered state of pure, 
+                            unbroken rage - suffering for which respite 
+                            can only be found in the act of the kill.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Gladiator-->
+            <!-- <li>
+                <div>
+                    <h2>Gladiator</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/gladiator.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            In the years following the end of the Golden Age, 
+                            competing factions of Argent D'Nur turned against 
+                            one another. An insidious influence has set itself 
+                            upon the Sentinel people, corrupting its once sacred 
+                            traditions. The coliseum, once a place of honorable 
+                            combat where prisoners of the Argenta were tested 
+                            for the right to fight in the front lines of their army, 
+                            has since become a place of blood-sport. In violation of 
+                            Sentinel law, the Priests have encaged a demon there, 
+                            a merciless executioner used to enact judgement of 
+                            their own decree. The Gladiator, wielding an accursed 
+                            shield which entombs the tormented soul of his undying 
+                            master, remains undefeated in battle, infamous for the many 
+                            lives it has claimed.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!-- Icon of Sin-->
+            <!-- <li>
+                <div>
+                    <h2>Icon of Sin</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/icon of sin.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            Born from the tortured spirit of the Betrayer's son, 
+                            it was by Hell's unholy design that the Icon of Sin 
+                            was given flesh. The fearsome Titan, forged from the 
+                            essence of mortal suffering, once bore a human soul
+                            - a soul now transmogrified and entombed within the 
+                            still beating heart of its former self. The Betrayer, 
+                            seeking to free his son from eternal torment within 
+                            the depths of Hell, made an agreement - a pact 
+                            sealed by the black fates of darkness - that promised 
+                            to grant his son the chance to return from death. 
+                            The son would live again, but not as a human - in Hell's 
+                            endless cruelty, the son was damned to become the Icon, 
+                            an inhuman existence bound only to its former humanity 
+                            by the now disembodied, undying mortal heart.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--whiplash-->
+            <!-- <li>
+                <div>
+                    <h2>Whiplash</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/whiplash.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            A scavenger of the Hellscape, the Whiplash creature 
+                            was first discovered by UAC expedition teams in the 
+                            black desert of the Sanctum Wastelands. These elusive, 
+                            serpentine demons move with great speed and agility. 
+                            They are capable of striking from a great distance with 
+                            retractable bladed whips concealed within their forearms. 
+                            This particular demon breed became an object of great 
+                            interest to the UAC engineers on Earth, while attempts 
+                            to capture live specimens of this nimble and unpredictable 
+                            creature proved to be exceptionally dangerous. 
+                            After successfully acquiring living specimens, researchers 
+                            implanted cybernetic augmentations designed to enhance 
+                            the Whiplash's innate strength and lethality.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#mancubus-->
+            <!-- <li>
+                <div>
+                    <h2>Mancubus</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/mancubus.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            The Mancubus, hulking behemoth of the demon world, 
+                            bears notable differences from those of its kind 
+                            first encountered by the UAC expedition team on Mars. 
+                            Unlike its brethren which wore a naturally occurring 
+                            armored carapace, this variation shows clear signs 
+                            of pre-existing man-made modifications. Armor-plating 
+                            augmentation to its exterior and a sophisticated 
+                            arm-mounted weapon system indicate a clear intent to 
+                            upgrade and weaponize the fighting capacity of the 
+                            Mancubus, whose heavy stature and resilience make it 
+                            a formidable threat in battle.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Marauder-->
+            <!-- <li>
+                <div>
+                    <h2>Marauder</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/marauder.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            As civil war consumed Argent D'Nur, the Night 
+                            Sentinels Guard was quartered by their faith. 
+                            Torn between serving the Khan Maykr or revolting 
+                            against that which they swore to protect. Those most 
+                            disillusioned forswore their oath to the Sentinel 
+                            royalty, abandoning their pact of allegiance made 
+                            to the throne. These hardened warriors joined the 
+                            separatist group led by the exalted Priest class, 
+                            allying themselves with the Maykrs and their devout 
+                            acolytes in an attempted coup against the Sentinel 
+                            royal house. Those Sentinel warriors who fell in battle, 
+                            having sided with the Maykrs, were ultimately denied 
+                            finality in death. Resurrected by the Divinity Machine 
+                            of Maykr design, these fallen Sentinels were returned 
+                            from the dead, transformed by Hell's power, and recreated
+                            with a singular purpose: to hunt the Slayer, now reborn 
+                            as Knights in Hell's army.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--pain elemental-->
+            <!-- <li>
+                <div>
+                    <h2>Pain Elemental</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/pain elemental.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            An abhorrent creation of the Umbral Plains, 
+                            the Pain Elemental is descended from the primal, 
+                            abominable depths of the demon world. Knowing only 
+                            its own torment, the Elemental is cursed to forge 
+                            Lost Souls within the fiery pit of its gut--a 
+                            process that is excruciating and without end for 
+                            the duration of the creature's miserable lifespan.
+                            The Elemental's only reprieve from its own agonizing 
+                            and torturous existence is the projection of suffering 
+                            into the world. For this reason, the Pain Elemental 
+                            reaps great satisfaction from indiscriminate killing
+                            and the infliction of misery upon those weaker than itself.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!-- pinky -->
+            <!-- <li>
+                <div>
+                    <h2>Pinky</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/pinky.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            As Hell emerged on Earth the Pinky began to 
+                            appear on terrestrial soil in great number, 
+                            rapidly becoming the bane of existence to ARC 
+                            military fortifications. Utilizing its armored 
+                            frontal carapace, the Pinky is able to penetrate 
+                            defensive encampments, breaking through walled 
+                            defenses and using its ramming ability to upturn 
+                            and immobilize armored vehicles. ARC deployments, 
+                            dependent on their ability to hold the line against 
+                            encroaching forces of Hell, could be disrupted and 
+                            even overtaken by a single Pinky, were it able to 
+                            penetrate and break through their defensive matrix. 
+                            allowing a greater demon influx to pour in after it. 
+                            The ARC rapidly prioritized the target status of the 
+                            Pinky, issuing high-range bombardment to prevent the 
+                            Pinky from gaining proximity.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--revenant -->
+            <!-- <li>
+                <div>
+                    <h2>Revenant</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/revenant.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            The Revenant program, a bio-weapon experiment 
+                            utilizing re-animated necrotic human tissue, was 
+                            believed to have been destroyed with the collapse 
+                            of the UAC facility on Mars. However, the emergence 
+                            of the Cultist enclaves on Earth - former UAC 
+                            deviations now under Hell's direct control - have 
+                            begun work on a second wave of production of the 
+                            Revenant program. While much of the platform's existing 
+                            weapon payload is preserved as originally designed, the 
+                            cyber-neural programming has undergone modification. 
+                            Patterned signals are wired to the host's frontal cortex, 
+                            which in turn stimulate a state of frenzied, unrestrained 
+                            bloodlust. While these signals are active, the host is 
+                            incapable of thinking or feeling anything but a singular 
+                            compulsion to inflict death and violence on the living.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--tyrant -->
+            <!-- <li>
+                <div>
+                    <h2>Tyrant</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/tyrant.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            Demon Lords to the black soul pits of Babel, 
+                            the Tyrants have long served as wardens and 
+                            slavers of the infernal pits. Weaponized and 
+                            cybernetically altered by the UAC, the Tyrants 
+                            are tasked with overseeing the collection and 
+                            extraction of sin-branded souls from the mortal world, 
+                            their role in Hell ordained by the unholy sigil of 
+                            the Elder Hell-gods. A sadistic master of lesser demons, 
+                            the Tyrants are feared for their cruelty and malice.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+            <!--#Khan Maykr(Boss Final) -->
+            <!-- <li>
+                <div>
+                    <h2>Khan Maykr</h2>
+                </div>
+
+                <div>
+                    <img src="src/imagens/khan maykr.png" alt="doom_hunter">
+                </div>
+            
+                <div>
+                    <h3>
+                        <p> 
+                            The Khan Maykr is one of the many Khan Maykrs 
+                            that is birthed by the Singularity, the collective 
+                            Maykr consciousness, that is destiny-bound to lead 
+                            the Maykr race until the next Khan is born. 
+                            The Singularity, which contains the conscious 
+                            soul-data of every major Maykr that has ever lived 
+                            and died, processes and refines this data as a means 
+                            of selective evolution. As hierarch of the conscious
+                            neural-matrix to which each Maykr is interconnected 
+                            like a hivemind, it is physically impossible for a 
+                            Maykr to refuse the collective order of shared 
+                            consciousness and disobey a Khan. This system has 
+                            functioned without error since the creation of Urdak, 
+                            until the disappearance of The Father, the progenitor 
+                            of the Maykr race, caused by a rogue Maykr known as the 
+                            Seraphim. Without the Father, the Maykrs are incapable 
+                            of creating a successor to the Khan lineage, allowing 
+                            the current Khan Maykr to rule Urdak without limit.
+                        </p>
+                    </h3>
+                </div>    
+            </li> -->
+
+        </ul>
+
+        <button class="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+            </svg>
+        </button>
+
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
