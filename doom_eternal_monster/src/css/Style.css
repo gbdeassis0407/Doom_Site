@@ -17,8 +17,53 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
     /* Background */
+}
+
+.open {
+    /* tamanho doca card aberto e o que esta mostrando*/
+}
+
+.close {
+    /* tamanho do card fechado */
+}
+
+.card {
+    backdrop-filter: blur(60px);
+    background-color: #00000071;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .sub_title {
+    font-family: 'AmazDooMLeft2', sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: red;
+    padding-top: 25px;
+    margin: 20 auto;
+}
+
+.card .imagem {
+    overflow: hidden;
+    border-radius: 50px;
+    width: 100%;
+    height: 300px;
+}
+
+.card .imagem img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card .description {
+    color: whitesmoke;
+    margin: 10px;
 }
 
 .cabecalho {
@@ -51,37 +96,34 @@ body {
 
 }
 
-.sub_title {
+/* .sub_title {
     font-family: 'AmazDooMLeft2', sans-serif;
+    letter-spacing: 4px;
     font-size: 50px;
     color: black;
     padding-top: 25px;
     margin: 20 auto;
 
-}
+} */
 
 .lista-enemy li {
-    background-color: brown;
     align-items: center;
-    background-image: url(../imagens/card_doom.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: auto;
     -webkit-text-size-adjust: auto;
     /* justify-content: center; */
     /* display: flex; */
 }
 
+/* 
 .lista-enemy .descrition {
     color: whitesmoke;
     margin: 8px;
-}
+} */
 
-.lista-enemy img {
+/* .lista-enemy img {
     border-radius: 20%;
     width: 480px;
     height: 300px;
-}
+} */
 
 .right {
     background-color: transparent;
